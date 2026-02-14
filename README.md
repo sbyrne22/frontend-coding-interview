@@ -40,3 +40,34 @@ Thank you for taking the time to interview with Clever. This coding challenge is
 Remember, please don't spend too much time on this. In fact, save a little time and **add a section to the README** outlining what else you'd do differently to make this a production ready app.
 
 **Any questions**, just let us know. Send emails to <a href="mailto:james.crain@movewithclever.com">james.crain@movewithclever.com</a>. Good luck!
+
+### Production Improvements
+If this were a production application, I would make the following enhancements:
+
+#### Authentication & Security
+- Replace localStorage-based auth with secure session handling.
+- Store tokens in httpOnly cookies instead of localStorage.
+- Add server-side session validation and CSRF protection.
+
+#### API Hardening
+- Validate incoming requests.
+- Add rate limiting to protect the proxy route.
+- Implement response caching to reduce upstream API calls.
+- Add request timeouts and improved error normalization.
+
+#### Error Handling & Observability
+- Improve user-facing error states.
+- Add retry logic for transient upstream failures.
+
+#### Performance
+- Add loading skeletons instead of blank states.
+
+#### UX
+- Add pagination or infinite scroll for scalability.
+- Add profile and account management
+
+#### Testing & CI
+- Add integration tests using MSW for realistic network mocking.
+
+#### Developer Experience
+- Enable strict TypeScript mode.

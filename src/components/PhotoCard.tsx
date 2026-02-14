@@ -14,9 +14,7 @@ export default function PhotoCard({ photo }: Props) {
         <div className={`${styles.photoCard} flexSB`}>
             <div className={`${styles.mainImageContent} flexSB`}>
                 <button className={`${styles.likeButton} ${liked ? styles.liked : styles.unliked}`} type="button" aria-label="Toggle liking the photo" onClick={() => setLiked(!liked)}></button>
-                <div className={styles.imageContainer}>
-                    <img className={styles.photo} src={photo.src.medium} alt={photo.alt}></img>
-                </div>
+                <img className={styles.photo} src={photo.src.medium} alt={photo.alt}></img>
                 <div className={styles.imageInfo}>
                     <p className={styles.photographer}>{photo.photographer}</p>
                     <p className={styles.photoAlt}>{photo.alt}</p>

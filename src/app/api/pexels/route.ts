@@ -7,7 +7,7 @@ export async function GET() {
         });
     }
 
-    const res = await fetch('https://api.pexels.com/v1/search?query=nature&per_page=10', {
+    const res = await fetch('https://api.pexels.com/v1/search?query=all&per_page=10', {
         headers: { Authorization: key },
     });
 

@@ -37,6 +37,7 @@
     height: var(--photo-size);
     border-radius: var(--standard-border-radius);
     margin: 0 0 0 var(--photo-spacing);
+    object-fit: cover;
 }
 
 .imageInfo {

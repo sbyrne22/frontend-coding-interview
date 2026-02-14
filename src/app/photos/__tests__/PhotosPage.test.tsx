@@ -16,9 +16,9 @@ describe('PhotosPage auth behavior', () => {
         localStorage.clear();
 
         render(
-          <AuthProvider>
-            <PhotosPage />
-          </AuthProvider>
+            <AuthProvider>
+                <PhotosPage />
+            </AuthProvider>
         );
 
         expect(pushMock).toHaveBeenCalledWith('/');

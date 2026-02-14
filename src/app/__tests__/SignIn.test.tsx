@@ -26,10 +26,10 @@ describe('SignInPage', () => {
 
         await userEvent.type(screen.getByLabelText(/username/i), 'test@test.com');
         await userEvent.type(screen.getByLabelText(/password/i), 'password');
-        
+
         await userEvent.click(screen.getByRole('button', { name: /sign in/i }));
 
-        expect (localStorage.getItem('auth')).toBe('true');
-        expect (pushMock).toHaveBeenCalledWith('/photos');
+        expect(localStorage.getItem('auth')).toBe('true');
+        expect(pushMock).toHaveBeenCalledWith('/photos');
     });
 });

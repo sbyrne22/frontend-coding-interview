@@ -13,7 +13,7 @@ export default function PhotoCard({ photo }: Props) {
     return (
         <div className={`${styles.photoCard} flexSB`}>
             <div className={`${styles.mainImageContent} flexSB`}>
-                <button className={`${styles.likeButton} ${liked ? styles.liked : styles.unliked}`} aria-label="Toggle likeing the photo" onClick={() => setLiked(!liked)}></button>
+                <button className={`${styles.likeButton} ${liked ? styles.liked : styles.unliked}`} type="button" aria-label="Toggle liking the photo" onClick={() => setLiked(!liked)}></button>
                 <div className={styles.imageContainer}>
                     <img className={styles.photo} src={photo.src.medium} alt={photo.alt}></img>
                 </div>
@@ -23,7 +23,7 @@ export default function PhotoCard({ photo }: Props) {
                     <div className={styles.colorSection}><span>{photo.avg_color}</span> <div className={styles.photoColorBlock} style={{ backgroundColor: photo.avg_color }}></div></div>
                 </div>
             </div>
-            <a className={styles.portfolioLink} href={photo.photographer_url} aria-label={`Go to ${photo.photographer} portfolio`} target='_blank'><span className={styles.linkIcon}></span> Portfolio</a>
+            <a className={styles.portfolioLink} href={photo.photographer_url} aria-label={`Go to ${photo.photographer} portfolio`} target='_blank' rel="noopener noreferrer"><span className={styles.linkIcon}></span> Portfolio</a>
         </div>
     )
 }

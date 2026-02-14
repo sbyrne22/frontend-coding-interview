@@ -1,62 +1,72 @@
 .headingSection {
-  margin: 36px auto 40px;
+	margin: 36px auto 40px;
 }
+
 .headline {
-  text-align: center;
-  font-size: var(--font-size-lg);
+	text-align: center;
+	font-size: var(--font-size-lg);
 }
+
 .signInForm {
-  width: 100%;
-  margin: 0 auto;
+	width: 100%;
+	margin: 0 auto;
 }
-.signInForm .inputSection  {
-  margin: 0 auto 23px auto;
-  max-width: var(--standard-input-width);
+
+.signInForm .inputSection {
+	margin: 0 auto 23px auto;
+	max-width: var(--standard-input-width);
 }
+
 .labelContainer {
-  width: 100%;
-  font-size: var(--font-size-sm);
-  margin: 0 0 11px;
+	width: 100%;
+	font-size: var(--font-size-sm);
+	margin: 0 0 11px;
 }
+
 .label {
-  font-weight: 700;
+	font-weight: 700;
 }
-.signInForm input  {
-  width: 100%;
-  max-width: var(--standard-input-width);
-  height: var(--standard-input-height);
-  border-radius: var(--standard-border-radius);
-  border: 1px solid #555555;
-  padding: 0 10px;
-  font-size: var(--font-size-md);
+
+.signInForm input {
+	width: 100%;
+	max-width: var(--standard-input-width);
+	height: var(--standard-input-height);
+	border-radius: var(--standard-border-radius);
+	border: 1px solid #555555;
+	padding: 0 10px;
+	font-size: var(--font-size-md);
 }
+
 .signInForm input:focus {
-  outline: 1px solid var(--primary-color);
+	outline: 1px solid var(--primary-color);
 }
+
 .submitCTA {
-  display: block;
-  width: 100%;
-  max-width: var(--standard-input-width);
-  height: var(--standard-input-height);
-  margin: 1px auto 0;
-  border-radius: var(--standard-border-radius);
-  background: var(--primary-color);
-  border: none;
-  cursor: pointer;
-  font-size: var(--font-size-md);
-  font-weight: 700;
-  color: var(--light-text-color);
+	display: block;
+	width: 100%;
+	max-width: var(--standard-input-width);
+	height: var(--standard-input-height);
+	margin: 1px auto 0;
+	border-radius: var(--standard-border-radius);
+	background: var(--primary-color);
+	border: none;
+	cursor: pointer;
+	font-size: var(--font-size-md);
+	font-weight: 700;
+	color: var(--light-text-color);
 }
+
 .labelContainer {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 5px 0;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 5px 0;
 }
+
 @media (min-width: 600px) {
-  .signInContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-  }
+	.signInContent {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100vh;
+	}
 }

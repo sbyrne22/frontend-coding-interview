@@ -14,9 +14,9 @@ export default function Home() {
   const [password, setPassword] = useState('');
 
   const handleSignIn = (e: React.SubmitEvent) => {
-      e.preventDefault();
-      signin(email);
-      router.push('/photos');
+    e.preventDefault();
+    signin(email);
+    router.push('/photos');
   };
 
   return (
@@ -30,14 +30,14 @@ export default function Home() {
           <div className={styles.labelContainer}>
             <label className={styles.label} htmlFor="username">Username</label>
           </div>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} id="username" name="user_name" placeholder=" " autoComplete="username" required/>
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} id="username" name="user_name" placeholder=" " autoComplete="username" required />
         </section>
         <section className={`${styles.inputSection} flexColCenter`}>
           <div className={styles.labelContainer}>
             <label className={styles.label} htmlFor="current-password">Password</label>
             <span><a href="#">Forgot Password?</a></span>
           </div>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} pattern=".{8,}" id="current-password" name="current-password" placeholder=" " autoComplete="current-password" aria-describedby="password-constraints" required/>
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} pattern=".{8,}" id="current-password" name="current-password" placeholder=" " autoComplete="current-password" aria-describedby="password-constraints" required />
         </section>
         <button className={styles.submitCTA} type="submit" id="signin">Sign in</button>
       </form>

@@ -35,20 +35,25 @@ a {
   color: var(--primary-color);
   text-decoration: none;
 }
+
 .mainContent {
   max-width: 500px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 35px;
+  /* This matches the most consistent padding in Figma; I intentionally ignored the inconsistent ones as design errors. */
   box-sizing: content-box;
   color: var(--primary-text-color);
 }
+
 .headline {
   font-size: var(--font-size-lg);
 }
+
 .flexSB {
   display: flex;
   justify-content: space-between;
 }
+
 .flexColCenter {
   display: flex;
   flex-direction: column;

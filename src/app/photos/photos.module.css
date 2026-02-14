@@ -2,6 +2,7 @@
     margin: 36px auto 40px;
     width: 100%;
 }
+
 @media (min-width: 600px) {
     .headingSection {
         margin: 24px auto 40px;

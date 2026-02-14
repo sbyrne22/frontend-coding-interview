@@ -3,19 +3,19 @@ import "./globals.css";
 
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className="">
-        <AuthProvider>
-          <main className="mainContent">
-            {children}
-          </main>
-        </AuthProvider>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className="">
+				<AuthProvider>
+					<main className="mainContent">
+						{children}
+					</main>
+				</AuthProvider>
+			</body>
+		</html>
+	);
 }

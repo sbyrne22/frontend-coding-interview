@@ -1,6 +1,6 @@
 'use client';
 
-import {createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 
 type AuthContextType = {
     isAuthenticated: boolean;
@@ -25,7 +25,7 @@ export function AuthProvider({ children }: Props) {
         if (stored === 'true') {
             setIsAuthenticated(true);
         }
-        
+
         setIsLoading(false);
     }, []);
 

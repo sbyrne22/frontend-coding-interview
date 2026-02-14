@@ -7,10 +7,12 @@
     --photo-spacing: 12px;
     --photo-info-spacing: 12px;
 }
+
 .mainImageContent {
     margin: 0 8px 0 0;
     max-width: 78%;
 }
+
 .likeButton {
     width: var(--like-btn-width);
     height: 18px;
@@ -21,50 +23,61 @@
     cursor: pointer;
     background-color: transparent;
 }
+
 .unliked {
     background-image: url('/star-unliked.svg');
 }
+
 .liked {
     background-image: url('/star-liked.svg');
 }
+
 .photo {
     width: var(--photo-size);
     height: var(--photo-size);
     border-radius: var(--standard-border-radius);
     margin: 0 0 0 var(--photo-spacing);
 }
+
 .imageInfo {
     display: flex;
     flex-direction: column;
     margin: 0 0 0 var(--photo-info-spacing);
     max-width: calc(100% - (var(--photo-size) + var(--photo-info-spacing) + var(--photo-spacing) + var(--like-btn-width)));
 }
-.imageInfo > *:not(:first-child) {
+
+.imageInfo>*:not(:first-child) {
     margin: 6px 0 0 0;
 }
+
 .photographer {
     font-weight: 700;
 }
+
 .photoAlt {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 .colorSection {
     display: flex;
     align-items: center;
 }
+
 .photoColorBlock {
     width: 12px;
     height: 12px;
     margin: 0 0 0 8px;
 }
+
 .portfolioLink {
     text-align: right;
     font-size: var(--font-size-xs);
     line-height: 100%;
     min-width: fit-content;
 }
+
 .linkIcon {
     display: inline-block;
     width: 12px;

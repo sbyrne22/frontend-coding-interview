@@ -44,6 +44,8 @@ Remember, please don't spend too much time on this. In fact, save a little time 
 ### Production Improvements
 If this were a production application, I would make the following enhancements:
 
+- Add necessary environments with build process.
+
 #### Authentication & Security
 - Replace localStorage-based auth with secure session handling.
 - Store tokens in httpOnly cookies instead of localStorage.
@@ -54,6 +56,7 @@ If this were a production application, I would make the following enhancements:
 - Add rate limiting to protect the proxy route.
 - Implement response caching to reduce upstream API calls.
 - Add request timeouts and improved error normalization.
+- Add proper env keys
 
 #### Error Handling & Observability
 - Improve user-facing error states.

@@ -65,6 +65,10 @@ If this were a production application, I would make the following enhancements:
 #### UX
 - Add pagination or infinite scroll for scalability.
 - Add profile and account management
+- Add hover, focus, and disabled states for buttons
+- Add hover styling for links
+- Add error styling to inputs
+- Improve accessability for screen readers/assistive technologies
 
 #### Testing & CI
 - Add integration tests using MSW for realistic network mocking.
